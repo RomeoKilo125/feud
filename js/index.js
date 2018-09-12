@@ -15,9 +15,11 @@ $(document).ready(function() {
 
   function addAnswers(array) {
     let answerArea = $('#answerArea')
-    array.forEach(function(answer) {
+    array.forEach(function(answer, i) {
       let newdiv = $('<div>')
-      newdiv.text(answer)
+      newdiv.text(`${answer}`)
+      newdiv.attr("id", `cvr${i}`)
+      newdiv.attr("class", "cover")
       answerArea.append(newdiv)
     })
 
