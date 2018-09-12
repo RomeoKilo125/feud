@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -7,16 +11,29 @@
 
 #scoreBox {
   border: solid black 1px;
-  min-width: 150px;
-  min-height: 100px;
+  display: flex;
+  width: 150px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 #answerArea {
   border: solid black 1px;
-  min-width: 1000px;
-  min-height: 500px;
+  width: 1000px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.cover {
+  border: solid black 1px;
+  display: flex;
+  height: 20%;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
 }
