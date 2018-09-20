@@ -1,21 +1,18 @@
 $(document).ready(function() {
 
-// start game - reset score, load question
-
-// 
-
-  let answers = [
-    'answer one',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9',
-    '10'
-  ]
+// reset score
+function resetScore() {
+  $(`#scoreBox`).text(`0`)
+}
+// load question - pick question, addAnswers
+function loadRandomQuestion() {
+  qNum = Math.floor(Math.random() * questions.length)
+  question = questions[qNum]
+  questions.splice(qNum, 1)
+  console.log(question)
+  $(`#questionArea`).text(question.q)
+  addAnswers(question.a)
+}
 
   function addAnswers(array) {
     let answerArea = $('#answerArea')
