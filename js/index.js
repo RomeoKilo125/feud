@@ -38,6 +38,10 @@ function loadRandomQuestion() {
     console.log(`show answer ${id}`)
     $(`#cvr${id}`).addClass("hide")
     $(`#ans${id}`).removeClass("hide")
+    // add score
+    let currScore = parseInt($(`#scoreBox`).text())
+    let qScore = parseInt($(`#val${id}`).text())
+    $(`#scoreBox`).text(currScore + qScore)
   }
 
   $("body").on("click", ".cover", function() {
