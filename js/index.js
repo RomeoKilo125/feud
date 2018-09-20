@@ -43,5 +43,13 @@ function loadRandomQuestion() {
     showAnswer(id)
   })
 
-  addAnswers(answers)
+  // start game - reset score, load question
+  function startGame() {
+    resetScore()
+    loadRandomQuestion()
+  }
+
+
+loadRandomQuestion()
+
 })
