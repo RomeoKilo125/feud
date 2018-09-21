@@ -204,5 +204,288 @@ let questions = [
         value: 2
       }
     ]
+  }, {
+    q: "Who wat the most popular character on the sitcom Friends?",
+    a: [
+      {
+        content: "Rachel",
+        value: 19
+      }, {
+        content: "Joey",
+        value: 17
+      }, {
+        content: "Ross",
+        value: 16
+      }, {
+        content: "Chandler",
+        value: 16
+      }, {
+        content: "Monica",
+        value: 14
+      }, {
+        content: "Phoebe",
+        value: 10
+      }, {
+        content: "Gunther",
+        value: 3
+      }
+    ]
+  }, {
+    q: "Tell me something you can buy that costs a dollar or less.",
+    a: [
+      {
+        content: "Fruit",
+        value: 29
+      }, {
+        content: "Fast food",
+        value: 23
+      }, {
+        content: "Soft drink",
+        value: 17
+      }, {
+        content: "Newspaper",
+        value: 10
+      }, {
+        content: "Stamp",
+        value: 6
+      }, {
+        content: "Gum",
+        value: 4
+      }
+    ]
+  }, {
+    q: "Name a country that speaks Spanish.",
+    a: [
+      {
+        content: "Spain",
+        value: 38
+      }, {
+        content: "Mexico",
+        value: 24
+      }, {
+        content: "United States",
+        value: 10
+      }, {
+        content: "Cuba",
+        value: 10
+      }, {
+        content: "Argentina",
+        value: 4
+      }, {
+        content: "Costa Rica",
+        value: 3
+      }, {
+        content: "Chile",
+        value: 3
+      }, {
+        content: "Columbia",
+        value: 3
+      }, {
+        content: "Guatemala",
+        value: 2
+      }
+    ]
+  }, {
+    q: "Name a liquid in your kitchen that you hope no one ever accidentally drinks.",
+    a: [
+      {
+        content: "Soap",
+        value: 46
+      }, {
+        content: "Vinegar",
+        value: 30
+      }, {
+        content: "Cooking Oil",
+        value: 16
+      }, {
+        content: "Soy sauce",
+        value: 4
+      }, {
+        content: "Bacon grease",
+        value: 2
+      }
+    ]
+  }, {
+    q: "Name something that breaks down.",
+    a: [
+      {
+        content: "Car",
+        value: 44
+      }, {
+        content: "Body",
+        value: 22
+      }, {
+        content: "Computer",
+        value: 17
+      }, {
+        content: "Communication",
+        value: 7
+      }, {
+        content: "Foreign relations",
+        value: 2
+      }, {
+        content: "TV",
+        value: 2
+      }
+    ]
+  }, {
+    q: "Name a famous wizard.",
+    a: [
+      {
+        content: "Harry Potter",
+        value: 37
+      }, {
+        content: "Merlin",
+        value: 26
+      }, {
+        content: "Gandalf",
+        value: 11
+      }, {
+        content: "Dr. Strange",
+        value: 9
+      }, {
+        content: "The Wizard of Oz",
+        value: 8
+      }, {
+        content: "Voldemort",
+        value: 3
+      }, {
+        content: "Newt Scamander",
+        value: 2
+      }
+    ]
+  }, {
+    q: "How many pairs of socks does a fast food worker wear in one week?",
+    a: [
+      {
+        content: "7",
+        value: 25
+      }, {
+        content: "10",
+        value: 23
+      }, {
+        content: "14",
+        value: 20
+      }, {
+        content: "15",
+        value: 9
+      }, {
+        content: "2",
+        value: 7
+      }, {
+        content: "20",
+        value: 5
+      }, {
+        content: "5",
+        value: 3
+      }
+    ]
+  }, {
+    q: "Name another word for 'book.'",
+    a: [
+      {
+        content: "Novel",
+        value: 55
+      }, {
+        content: "Story",
+        value: 16
+      }, {
+        content: "Paperback",
+        value: 10
+      }, {
+        content: "Pamphlet",
+        value: 4
+      }, {
+        content: "Tome",
+        value: 4
+      }, {
+        content: "Volume",
+        value: 3
+      }, {
+        content: "Publication",
+        value: 3
+      }
+    ]
+  }, {
+    q: "What is the most stressful thing in the life of a 25-year-old woman?",
+    a: [
+      {
+        content: "Love life",
+        value: 28
+      }, {
+        content: "Job",
+        value: 26
+      }, {
+        content: "Finances/Debt",
+        value: 17
+      }, {
+        content: "School",
+        value: 4
+      }, {
+        content: "Friends",
+        value: 3
+      }, {
+        content: "Clothes",
+        value: 2
+      }, {
+        content: "Roommate",
+        value: 2
+      }, {
+        content: "Starting a family",
+        value: 2
+      }
+    ]
+  }, {
+    q: "Name a specific piece of furniture that might be handmade.",
+    a: [
+      {
+        content: "Table",
+        value: 41
+      }, {
+        content: "Chair",
+        value: 31
+      }, {
+        content: "Shelf/Bookshelf",
+        value: 12
+      }, {
+        content: "Dresser",
+        value: 5
+      }, {
+        content: "Bed",
+        value: 2
+      }, {
+        content: "Cabinet",
+        value: 2
+      }, {
+        content: "Bench",
+        value: 2
+      }
+    ]
+  }, {
+    q: "Tell me whose name a young man might have in his tattoo.",
+    a: [
+      {
+        content: "Mom",
+        value: 33
+      }, {
+        content: "Wife/Girlfriend",
+        value: 25
+      }, {
+        content: "Child",
+        value: 14
+      }, {
+        content: "God",
+        value: 10
+      }, {
+        content: "Father",
+        value: 6
+      }, {
+        content: "Grandparent",
+        value: 5
+      }, {
+        content: "Pet",
+        value: 2
+      }
+    ]
   }
 ]
