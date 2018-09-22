@@ -12,6 +12,7 @@ $(document).ready(function() {
     question = questions[qNum]
     questions.splice(qNum, 1)
     console.log(question)
+    $(`#strikeArea`).empty()
     $(`#questionArea`).text(question.q)
     addAnswers(question.a)
   }
@@ -39,6 +40,8 @@ $(document).ready(function() {
 
   function showAnswer(id) {
     console.log(`show answer ${id}`)
+    let sound = new Audio(`../sounds/ff-clang.wav`)
+    sound.play()
     $(`#cvr${id}`).addClass("hide")
     $(`#ans${id}`).removeClass("hide")
     // add score
@@ -55,6 +58,8 @@ $(document).ready(function() {
   }
 
   function strike() {
+    let sound = new Audio(`../sounds/ff-strike.wav`)
+    sound.play()
     $(`#strikeArea`).append(`<div>&times;</div>`)
   }
 
