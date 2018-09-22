@@ -1,22 +1,24 @@
 $(document).ready(function() {
 
-// reset score
-function resetScore() {
-  $(`#scoreBox`).text(`0`)
-}
-// load question - pick question, addAnswers
-function loadRandomQuestion() {
-  console.log(questions.length)
-  qNum = Math.floor(Math.random() * questions.length)
-  question = questions[qNum]
-  questions.splice(qNum, 1)
-  console.log(question)
-  $(`#questionArea`).text(question.q)
-  addAnswers(question.a)
-}
+  // reset score
+  function resetScore() {
+    $(`#questionScore`).text(`0`)
+  }
+
+  // load question - pick question, addAnswers
+  function loadRandomQuestion() {
+    console.log(questions.length)
+    qNum = Math.floor(Math.random() * questions.length)
+    question = questions[qNum]
+    questions.splice(qNum, 1)
+    console.log(question)
+    $(`#questionArea`).text(question.q)
+    addAnswers(question.a)
+  }
 
   function addAnswers(array) {
     let answerArea = $('#answerArea')
+    $('#answerArea').empty()
     array.forEach(function(answer, i) {
       let newdiv = $('<div>')
       newdiv.attr("id", `ans${i}`)
@@ -45,18 +47,67 @@ function loadRandomQuestion() {
     $(`#questionScore`).text(currScore + qScore)
   }
 
-  $("body").on("click", ".cover", function() {
-    let id = $(this).attr("data-id")
-    showAnswer(id)
+  function addTeamPoints(team) {
+    let currScore = parseInt($(`#score${team}`).text())
+    let qScore = parseInt($(`#questionScore`).text())
+    $(`#score${team}`).text(currScore + qScore)
+    $(`#questionScore`).text(0)
+  }
+
+  function strike() {
+    $(`#strikeArea`).append(`<div>&times;</div>`)
+  }
+
+  // $(document).on("click", ".cover", function() {
+  //   let id = $(this).attr("data-id")
+  //   showAnswer(id)
+  // })
+
+  $(document).keyup(e => {
+    console.log(e.key)
+    switch (e.key) {
+      case 'R':
+        resetScore()
+        break;
+      case 'ArrowRight':
+        loadRandomQuestion()
+        break;
+      case 'S':
+        startGame()
+        break;
+      case 'x':
+        strike()
+        break;
+      case 'X':
+        $(`#strikeArea`).empty()
+        break;
+      case '!':
+        addTeamPoints(1)
+        break;
+      case '@':
+        addTeamPoints(2)
+        break;
+      default:
+        if (e.key.match(/\d/gi)) {
+          if (e.key === `0`) {
+            showAnswer(10)
+          } else {
+            showAnswer(e.key - 1)
+          }
+        }
+    }
   })
 
   // start game - reset score, load question
   function startGame() {
     resetScore()
-    loadRandomQuestion()
+    $('#score1').text(`0`)
+    $('#score2').text(`0`)
+    $('#answerArea').empty()
+    $('#questionArea').empty()
   }
 
 
-loadRandomQuestion()
+  startGame()
 
 })
