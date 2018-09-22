@@ -205,7 +205,7 @@ let questions = [
       }
     ]
   }, {
-    q: "Who wat the most popular character on the sitcom Friends?",
+    q: "Who was the most popular character on the sitcom Friends?",
     a: [
       {
         content: "Rachel",
