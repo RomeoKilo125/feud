@@ -487,5 +487,291 @@ let questions = [
         value: 2
       }
     ]
+  }, {
+    q: "Name a character from Game of Thrones.",
+    a: [
+      {
+        content: "Jon Snow",
+        value: 26
+      }, {
+        content: "Daenerys 'Khaleesi' Targaryen",
+        value: 23
+      }, {
+        content: "Arya Stark",
+        value: 22
+      }, {
+        content: "Tyrion 'The Dwarf' Lannister",
+        value: 15
+      }, {
+        content: "Cersei Lannister",
+        value: 7
+      }, {
+        content: "Jaime Lannister",
+        value: 2
+      }, {
+        content: "Sansa Stark",
+        value: 2
+      }, {
+        content: "Ned Stark",
+        value: 2
+      }
+    ]
+  }, {
+    q: 'How long is an "unbearable" commute?',
+    a: [
+      {
+        content: "1 hour",
+        value: 41
+      }, {
+        content: "30 minutes",
+        value: 26
+      }, {
+        content: "45 minutes",
+        value: 15
+      }, {
+        content: "20 minutes",
+        value: 6
+      }, {
+        content: "2 hours",
+        value: 5
+      }, {
+        content: "1.5 hours",
+        value: 2
+      }
+    ]
+  }, {
+    q: 'Name something you always have to keep plugged in.',
+    a: [
+      {
+        content: "TV",
+        value: 33
+      }, {
+        content: "Phone",
+        value: 25
+      }, {
+        content: "Computer",
+        value: 24
+      }, {
+        content: "Lamp",
+        value: 11
+      }, {
+        content: "Headphones",
+        value: 2
+      }, {
+        content: "Computer mouse",
+        value: 2
+      }
+    ]
+  }, {
+    q: 'Name a Harry Potter character',
+    a: [
+      {
+        content: "Harry Potter",
+        value: 52
+      }, {
+        content: "Hermione",
+        value: 16
+      }, {
+        content: "Ron",
+        value: 14
+      }, {
+        content: "Fred/George",
+        value: 5
+      }, {
+        content: "Newt Scamander",
+        value: 5
+      }, {
+        content: "Dumbledore",
+        value: 3
+      }, {
+        content: "Snape",
+        value: 2
+      }, {
+        content: "Hagrid",
+        value: 2
+      }
+    ]
+  }, {
+    q: 'Name a sport some mothers hope their child never plays',
+    a: [
+      {
+        content: "Hockey",
+        value: 36
+      }, {
+        content: "Football",
+        value: 34
+      }, {
+        content: "Baseball",
+        value: 13
+      }, {
+        content: "Soccer",
+        value: 7
+      }, {
+        content: "Rugby",
+        value: 5
+      }, {
+        content: "Basketball",
+        value: 3
+      }
+    ]
+  }, {
+    q: 'Name a fruit you might eat in the morning.',
+    a: [
+      {
+        content: "Banana",
+        value: 25
+      }, {
+        content: "Grapefruit",
+        value: 22
+      }, {
+        content: "Strawberry",
+        value: 19
+      }, {
+        content: "Apple",
+        value: 15
+      }, {
+        content: "Orange",
+        value: 12
+      }, {
+        content: "Melon",
+        value: 3
+      }, {
+        content: "Peach",
+        value: 2
+      }
+    ]
+  }, {
+    q: 'Name a reason you might be late for work.',
+    a: [
+      {
+        content: "Traffic",
+        value: 38
+      }, {
+        content: "Woke up / left late",
+        value: 26
+      }, {
+        content: "Car trouble / accident",
+        value: 11
+      }, {
+        content: "Bus/train delay",
+        value: 10
+      }, {
+        content: "Droppinig off kids",
+        value: 4
+      }, {
+        content: "Sick / Medical emergency",
+        value: 4
+      }, {
+        content: "Weather",
+        value: 3
+      }, {
+        content: "Hungover",
+        value: 2
+      }
+    ]
+  }, {
+    q: 'What is the first thing most people do in the morning?',
+    a: [
+      {
+        content: "Bathroom",
+        value: 24
+      }, {
+        content: "Shower",
+        value: 19
+      }, {
+        content: "Breakfast",
+        value: 18
+      }, {
+        content: "Open eyes",
+        value: 15
+      }, {
+        content: "Turn off alarm / Snooze",
+        value: 12
+      }, {
+        content: "Brush teeth",
+        value: 7
+      }, {
+        content: "Get dressed",
+        value: 2
+      }
+    ]
+  }, {
+    q: 'What is the first thing most people do in the morning?',
+    a: [
+      {
+        content: "Bathroom",
+        value: 24
+      }, {
+        content: "Shower",
+        value: 19
+      }, {
+        content: "Breakfast",
+        value: 18
+      }, {
+        content: "Open eyes",
+        value: 15
+      }, {
+        content: "Turn off alarm / Snooze",
+        value: 12
+      }, {
+        content: "Brush teeth",
+        value: 7
+      }, {
+        content: "Get dressed",
+        value: 2
+      }
+    ]
+  }, {
+    q: 'At your job, out of the 60 minutes in each hour, how many do you spend doing actual work?',
+    a: [
+      {
+        content: "45 minutes",
+        value: 30
+      }, {
+        content: "30 minutes",
+        value: 23
+      }, {
+        content: "50 minutes",
+        value: 16
+      }, {
+        content: "0 minutes",
+        value: 6
+      }, {
+        content: "15 minutes",
+        value: 5
+      }, {
+        content: "10 minutes",
+        value: 4
+      }
+    ]
+  }, {
+    q: 'Name someone you might ask for directions.',
+    a: [
+      {
+        content: "Friend",
+        value: 20
+      }, {
+        content: "Siri / App",
+        value: 19
+      }, {
+        content: "Gas station employee",
+        value: 16
+      }, {
+        content: "store owner",
+        value: 14
+      }, {
+        content: "Stranger / Pedestrian",
+        value: 10
+      }, {
+        content: "Priest",
+        value: 9
+      }, {
+        content: "Neighbor",
+        value: 3
+      }, {
+        content: "Parent",
+        value: 2
+      }
+    ]
   }
 ]
