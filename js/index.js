@@ -6,6 +6,7 @@ function resetScore() {
 }
 // load question - pick question, addAnswers
 function loadRandomQuestion() {
+  console.log(questions.length)
   qNum = Math.floor(Math.random() * questions.length)
   question = questions[qNum]
   questions.splice(qNum, 1)
@@ -39,9 +40,9 @@ function loadRandomQuestion() {
     $(`#cvr${id}`).addClass("hide")
     $(`#ans${id}`).removeClass("hide")
     // add score
-    let currScore = parseInt($(`#scoreBox`).text())
+    let currScore = parseInt($(`#questionScore`).text())
     let qScore = parseInt($(`#val${id}`).text())
-    $(`#scoreBox`).text(currScore + qScore)
+    $(`#questionScore`).text(currScore + qScore)
   }
 
   $("body").on("click", ".cover", function() {

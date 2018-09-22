@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -9,13 +16,19 @@
   padding: 50px;
 }
 
-#scoreBox {
+.scoreBox {
   border: solid black 1px;
   display: flex;
   width: 150px;
   height: 100px;
   justify-content: center;
   align-items: center;
+}
+
+.teamScore {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #answerArea {
