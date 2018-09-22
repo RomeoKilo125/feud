@@ -110,6 +110,7 @@ $(document).ready(function() {
     $('#score2').text(`0`)
     $('#answerArea').empty()
     $('#questionArea').empty()
+    $(`#strikeArea`).empty()
   }
 
 
