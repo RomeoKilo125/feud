@@ -107,7 +107,7 @@ $(document).ready(function() {
     $('#answerArea').empty()
     $('#questionArea').empty()
     $(`#strikeArea`).empty()
-    $(`#answerArea`).append(`<div id="logoBox"><img src="../images/logo.svg" alt="Windstream Logo"></div>`)
+    $(`#answerArea`).append(`<div id="logoBox"><img src="./images/logo.svg" alt="Windstream Logo"></div>`)
     $(`.scoreBox`).addClass(`hide`)
   }
 
