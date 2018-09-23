@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Windstream Feud</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Press+Start+2P" rel="stylesheet">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/master.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -12,24 +14,26 @@
 </head>
 
 <body>
-  <div class="teamScore scoreBox">
-    Team 1
-    <div id="score1">
-      0
-    </div>
-  </div>
   <div class="container">
-    <div class="scoreBox" id="questionScore">0
+    <div class="teamScore scoreBox">
+      Team 1
+      <div id="score1">
+        0
+      </div>
     </div>
-    <div id="answerArea">
+    <div class="board">
+      <div class="scoreBox" id="questionScore">0
+      </div>
+      <div id="answerArea">
+      </div>
+      <div id="questionArea"></div>
+      <div id="strikeArea"></div>
     </div>
-    <div id="questionArea"></div>
-    <div id="strikeArea"></div>
-  </div>
-  <div class="teamScore scoreBox">
-    Team 2
-    <div id="score2">
-      0
+    <div class="teamScore scoreBox">
+      Team 2
+      <div id="score2">
+        0
+      </div>
     </div>
   </div>
 </body>
