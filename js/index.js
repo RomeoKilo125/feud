@@ -7,6 +7,8 @@ $(document).ready(function() {
 
   // load question - pick question, addAnswers
   function loadRandomQuestion() {
+    resetScore()
+    $(`.scoreBox`).removeClass(`hide`)
     console.log(questions.length)
     qNum = Math.floor(Math.random() * questions.length)
     question = questions[qNum]
@@ -19,7 +21,7 @@ $(document).ready(function() {
 
   function addAnswers(array) {
     let answerArea = $('#answerArea')
-    $('#answerArea').empty()
+    answerArea.empty()
     array.forEach(function(answer, i) {
       let newdiv = $('<div>')
       newdiv.attr("id", `ans${i}`)
@@ -63,11 +65,6 @@ $(document).ready(function() {
     $(`#strikeArea`).append(`<div>&times;</div>`)
   }
 
-  // $(document).on("click", ".cover", function() {
-  //   let id = $(this).attr("data-id")
-  //   showAnswer(id)
-  // })
-
   $(document).keyup(e => {
     console.log(e.key)
     switch (e.key) {
@@ -103,7 +100,6 @@ $(document).ready(function() {
     }
   })
 
-  // start game - reset score, load question
   function startGame() {
     resetScore()
     $('#score1').text(`0`)
@@ -111,8 +107,9 @@ $(document).ready(function() {
     $('#answerArea').empty()
     $('#questionArea').empty()
     $(`#strikeArea`).empty()
+    $(`#answerArea`).append(`<div id="logoBox"><img src="../images/logo.svg" alt="Windstream Logo"></div>`)
+    $(`.scoreBox`).addClass(`hide`)
   }
-
 
   startGame()
 

@@ -1,16 +1,24 @@
-* {
-  box-sizing: border-box;
+* { box-sizing: border-box;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #222222;
+  color: white;
+}
+
+img {
+  width: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  border: solid 5px #ffdd33;
+  border-radius: 50%;
+  margin-top: 50px;
 }
 
 .board {
@@ -18,10 +26,11 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 25px 50px;
+  font-size: 2em;
 }
 
 .scoreBox {
-  border: solid black 1px;
+  border: solid white 5px;
   display: flex;
   width: 150px;
   height: 100px;
@@ -36,8 +45,25 @@ body {
   justify-content: space-around;
 }
 
+.answerContent, .answerValue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.answerContent {
+  height: 100%;
+  width: 85%;
+}
+
+.answerValue {
+  background-color: #ffdd33;
+  width: 15%;
+  color: black;
+}
+
 #answerArea {
-  border: solid black 1px;
   width: 1000px;
   height: 500px;
   display: flex;
@@ -47,27 +73,40 @@ body {
   flex-wrap: wrap;
 }
 
-#questionArea {
-  border: solid black 1px;
-  width: 1000px;
-  height: 200px;
+#logoBox {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#questionArea {
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5em;
+}
+
 #strikeArea {
-  border: solid black 1px;
+  height: 100px;
   width: 500px;
   display: flex;
   justify-content: space-around;
-  font-size: 6em;
+  font-size: 4em;
   font-weight: bold;
   color: red;
 }
 
+#questionScore, #score1, #score2 {
+  font-size: 2em;
+}
+
 .answer, .cover {
-  border: solid black 1px;
+  border: solid white 5px;
   display: flex;
   height: 20%;
   width: 50%;
