@@ -13,10 +13,13 @@ $(document).ready(function() {
     qNum = Math.floor(Math.random() * questions.length)
     question = questions[qNum]
     questions.splice(qNum, 1)
-    console.log(question)
     $(`#strikeArea`).empty()
     $(`#questionArea`).text(question.q)
     addAnswers(question.a)
+    console.log(question.q)
+    question.a.forEach((elt, i) => {
+      console.log(`${i + 1}: ${elt.content} | ${elt.value}`)
+    })
   }
 
   function addAnswers(array) {
@@ -41,7 +44,7 @@ $(document).ready(function() {
   }
 
   function showAnswer(id) {
-    console.log(`show answer ${id}`)
+    console.log(`show answer: ${id + 1}`)
     let sound = new Audio(`./sounds/ff-clang.wav`)
     sound.play()
     $(`#cvr${id}`).addClass("hide")
@@ -66,7 +69,7 @@ $(document).ready(function() {
   }
 
   $(document).keyup(e => {
-    console.log(e.key)
+    // console.log(e.key)
     switch (e.key) {
       case 'R':
         resetScore()
