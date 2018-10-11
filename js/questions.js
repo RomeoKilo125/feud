@@ -656,7 +656,7 @@ let questions = [
         content: "Bus/train delay",
         value: 10
       }, {
-        content: "Droppinig off kids",
+        content: "Dropping off kids",
         value: 4
       }, {
         content: "Sick / Medical emergency",
