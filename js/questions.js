@@ -130,29 +130,6 @@ let questions = [
       }
     ]
   }, {
-    q: "Name something you might eat with a hamburger",
-    a: [
-      {
-        content: "French fries",
-        value: 60
-      }, {
-        content: "Soup",
-        value: 12
-      }, {
-        content: "Salad",
-        value: 9
-      }, {
-        content: "Onion Rings",
-        value: 5
-      }, {
-        content: "Tater Tots",
-        value: 5
-      }, {
-        content: "Pickles",
-        value: 3
-      }
-    ]
-  }, {
     q: "Name something you haven't done since high school gym class.",
     a: [
       {
@@ -666,32 +643,6 @@ let questions = [
         value: 3
       }, {
         content: "Hungover",
-        value: 2
-      }
-    ]
-  }, {
-    q: 'What is the first thing most people do in the morning?',
-    a: [
-      {
-        content: "Bathroom",
-        value: 24
-      }, {
-        content: "Shower",
-        value: 19
-      }, {
-        content: "Breakfast",
-        value: 18
-      }, {
-        content: "Open eyes",
-        value: 15
-      }, {
-        content: "Turn off alarm / Snooze",
-        value: 12
-      }, {
-        content: "Brush teeth",
-        value: 7
-      }, {
-        content: "Get dressed",
         value: 2
       }
     ]

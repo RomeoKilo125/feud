@@ -9,3 +9,5 @@ This is a game made in the style of a popular game show.
 - Shift + 2: Assign points to Team 2
 - x: STRIKE!
 - Shift + x: Reset Strikes
+
+**TODO**
