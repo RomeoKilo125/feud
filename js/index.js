@@ -95,7 +95,7 @@ $(document).ready(function() {
       default:
         if (e.key.match(/\d/gi)) {
           if (e.key === `0`) {
-            showAnswer(10)
+            showAnswer(9)
           } else {
             showAnswer(e.key - 1)
           }
