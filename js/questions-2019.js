@@ -307,10 +307,518 @@ let questions = [
     a: [
       {
         content: "Houdini",
-        value:49
+        value: 49
       }, {
         content: "Merlin",
-        value:30
+        value: 30
+      }
+    ]
+  }, {
+    q: "in minutes, how long is your commute to work",
+    a: [
+      {
+        content: "30 minutes",
+        value: 29
+      }, {
+        content: "15 minutes",
+        value: 19
+      }, {
+        content: "20 minutes",
+        value: 17
+      }, {
+        content: "10 minutes",
+        value: 13
+      }, {
+        content: "60 minutes",
+        value: 7
+      }, {
+        content: "5 minutes",
+        value: 6
+      }
+    ]
+  }, {
+    q: "name a type of professional you seldom see joking around",
+    a: [
+      {
+        content: "lawyer",
+        value: 31
+      }, {
+        content: "doctor",
+        value: 27
+      }, {
+        content: "politician",
+        value: 19
+      }, {
+        content: "judge",
+        value: 9
+      }, {
+        content: "teacher",
+        value: 4
+      }, {
+        content: "police",
+        value: 4
+      }
+    ]
+  }, {
+    q: "if you lived on sesame street, which character would get on your nerves",
+    a: [
+      {
+        content: "big bird",
+        value: 41
+      }, {
+        content: "elmo",
+        value: 19
+      }, {
+        content: "oscar",
+        value: 15
+      }, {
+        content: "cookie monster",
+        value: 14
+      }, {
+        content: "ernie",
+        value: 4
+      }, {
+        content: "grover",
+        value: 3
+      }
+    ]
+  }, {
+    q: "name a reason why someone might not want their number in the phone book",
+    a: [
+      {
+        content: "privacy",
+        value: 38
+      }, {
+        content: "prank calls",
+        value: 18
+      }, {
+        content: "stalker",
+        value: 13
+      }, {
+        content: "telemarketers",
+        value: 13
+      }, {
+        content: "ex",
+        value: 6
+      }, {
+        content: "they're famous",
+        value: 5
+      }
+    ]
+  }, {
+    q: "name a complaint people have about their cell phones",
+    a: [
+      {
+        content: "no service",
+        value: 21
+      }, {
+        content: "dropped calls",
+        value: 19
+      }, {
+        content: "fuzzy reception",
+        value: 16
+      }, {
+        content: "expensive",
+        value: 14
+      }, {
+        content: "batteries die fast",
+        value: 12
+      }, {
+        content: "break easily",
+        value: 4
+      }
+    ]
+  }, {
+    q: "name something you associate with fairy tales",
+    a: [
+      {
+        content: "princess",
+        value: 40
+      }, {
+        content: "fairies",
+        value: 15
+      }, {
+        content: "happy ending",
+        value: 15
+      }, {
+        content: "prince",
+        value: 8
+      }, {
+        content: "wicked witch",
+        value: 7
+      }, {
+        content: "brothers grimm",
+        value: 5
+      }
+    ]
+  }, {
+    q: "name a game people play at picnics",
+    a: [
+      {
+        content: "tag",
+        value: 23
+      }, {
+        content: "frisbee",
+        value: 20
+      }, {
+        content: "volleyball",
+        value: 17
+      }, {
+        content: "horseshoes",
+        value: 12
+      }, {
+        content: "football",
+        value: 11
+      }, {
+        content: "baseball",
+        value: 9
+      }
+    ]
+  }, {
+    q: "name a drink or food that can be eaten either hot or cold",
+    a: [
+      {
+        content: "tea",
+        value: 32
+      }, {
+        content: "pizza",
+        value: 29
+      }, {
+        content: "coffee",
+        value: 17
+      }, {
+        content: "milk",
+        value: 8
+      }, {
+        content: "soup",
+        value: 4
+      }, {
+        content: "cereal",
+        value: 3
+      }
+    ]
+  }, {
+    q: "name a sympton that would cause you to say, \"i think i'm coming down with something\"",
+    a: [
+      {
+        content: "runny nose",
+        value: 19
+      }, {
+        content: "cough",
+        value: 17
+      }, {
+        content: "fever",
+        value: 14
+      }, {
+        content: "sneezing",
+        value: 14
+      }, {
+        content: "sore throat",
+        value: 10
+      }, {
+        content: "stuffy head",
+        value: 9
+      }
+    ]
+  }, {
+    q: "name someplace where you'd see a lot of people gossiping",
+    a: [
+      {
+        content: "party",
+        value: 24
+      }, {
+        content: "mall",
+        value: 20
+      }, {
+        content: "place of worship",
+        value: 18
+      }, {
+        content: "work",
+        value: 14
+      }, {
+        content: "school",
+        value: 10
+      }, {
+        content: "hair salon",
+        value: 5
+      }
+    ]
+  }, {
+    q: "which quality to you think a boss looks for when hiring a new employee",
+    a: [
+      {
+        content: "appearance",
+        value: 27
+      }, {
+        content: "honesty",
+        value: 18
+      }, {
+        content: "experience",
+        value: 14
+      }, {
+        content: "personality",
+        value: 14
+      }, {
+        content: "education",
+        value: 10
+      }, {
+        content: "intelligence",
+        value: 9
+      }
+    ]
+  }, {
+    q: "name something you need in order to get a great job",
+    a: [
+      {
+        content: "résumé",
+        value: 34
+      }, {
+        content: "education",
+        value: 30
+      }, {
+        content: "experience",
+        value: 13
+      }, {
+        content: "good looks",
+        value: 8
+      }, {
+        content: "personality",
+        value: 5
+      }, {
+        content: "intelligence",
+        value: 3
+      }
+    ]
+  }, {
+    q: "name a kind of bell",
+    a: [
+      {
+        content: "liberty",
+        value: 27
+      }, {
+        content: "door",
+        value: 22
+      }, {
+        content: "church",
+        value: 12
+      }, {
+        content: "wedding",
+        value: 9
+      }, {
+        content: "school",
+        value: 9
+      }, {
+        content: "jingle",
+        value: 9
+      }
+    ]
+  }, {
+    q: "name something about rapunzel's hair she might have worried about",
+    a: [
+      {
+        content: "length",
+        value: 28
+      }, {
+        content: "tangles",
+        value: 17
+      }, {
+        content: "falling out",
+        value: 17
+      }, {
+        content: "split ends",
+        value: 10
+      }, {
+        content: "lice",
+        value: 9
+      }, {
+        content: "combing it",
+        value: 8
+      }
+    ]
+  }, {
+    q: "in the movies, name a specific lace a damsel in distress might be trapped or face danger",
+    a: [
+      {
+        content: "train tracks",
+        value: 24
+      }, {
+        content: "tower",
+        value: 20
+      }, {
+        content: "castle",
+        value: 19
+      }, {
+        content: "dark alley",
+        value: 10
+      }, {
+        content: "basement",
+        value: 7
+      }, {
+        content: "car",
+        value: 7
+      }
+    ]
+  }, {
+    q: "name the most stressful job to have on a cruise ship",
+    a: [
+      {
+        content: "captain",
+        value: 52
+      }, {
+        content: "food server",
+        value: 18
+      }, {
+        content: "cook",
+        value: 12
+      }, {
+        content: "housekeeper",
+        value: 7
+      }, {
+        content: "bartender",
+        value: 4
+      }, {
+        content: "lifeguard",
+        value: 3
+      }
+    ]
+  }, {
+    q: "name a kids movie that most adults have seen too",
+    a: [
+      {
+        content: "shrek",
+        value: 23
+      }, {
+        content: "toy story",
+        value: 22
+      }, {
+        content: "lion king",
+        value: 20
+      }, {
+        content: "et",
+        value: 10
+      }, {
+        content: "bambi",
+        value: 9
+      }, {
+        content: "cinderella",
+        value: 8
+      }
+    ]
+  }, {
+    q: "name something you may wear with a work uniform but wouldn't wear for a night on the town",
+    a: [
+      {
+        content: "bowtie",
+        value: 28
+      }, {
+        content: "name tag/badge",
+        value: 19
+      }, {
+        content: "cap/visor",
+        value: 17
+      }, {
+        content: "apron",
+        value: 11
+      }, {
+        content: "work boots",
+        value: 10
+      }, {
+        content: "hard hat",
+        value: 8
+      }
+    ]
+  },
+  /*{
+    q: "name a chore people did during colonial times that we don't do anymore",
+    a: [
+      {
+        content: "churn butter",
+        value: 28
+      }, {
+        content: "carry water",
+        value: 18
+      }, {
+        content: "handwash clothes",
+        value: 13
+      }, {
+        content: "milk cows",
+        value: 13
+      }, {
+        content: "farm work",
+        value:10
+      }, {
+        content: "chop wood",
+        value: 10
+      }
+    ]
+  }, */
+  {
+    q: "name a place where you wish people wouldn't answer their cell phone",
+    a: [
+      {
+        content: "movie theater",
+        value: 27
+      }, {
+        content: "place of worship",
+        value: 27
+      }, {
+        content: "restaurant",
+        value: 13
+      }, {
+        content: "car",
+        value: 11
+      }, {
+        content: "library",
+        value: 9
+      }, {
+        content: "work",
+        value: 7
+      }
+    ]
+  }, {
+    q: "name something you might see at a high school homecoming",
+    a: [
+      {
+        content: "queen",
+        value:26
+      }, {
+        content: "balloons",
+        value:17
+      }, {
+        content: "float",
+        value:14
+      }, {
+        content: "football game",
+        value: 11
+      }, {
+        content: "dresses",
+        value:11
+      }, {
+        content: "limos",
+        value:10
+      }
+    ]
+  }, {
+    q: "name a famous dog",
+    a: [
+      {
+        content: "lassie",
+        value: 43
+      }, {
+        content: "snoopy",
+        value: 17
+      }, {
+        content: "benji",
+        value: 9
+      }, {
+        content: "scooby doo",
+        value: 7
+      }, {
+        content: "rin tin tin",
+        value: 6
+      }, {
+        content: "clifford",
+        value: 5
       }
     ]
   }, {
