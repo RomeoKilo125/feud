@@ -822,29 +822,417 @@ let questions = [
       }
     ]
   }, {
-    q: "",
+    q: "name something that even a very small town usually has one of",
     a: [
       {
-        content: "",
-        value:
+        content: "gas station",
+        value:25
       }, {
-        content: "",
-        value:
+        content: "post office",
+        value:21
       }, {
-        content: "",
-        value:
+        content: "bank",
+        value:15
       }, {
-        content: "",
-        value:
+        content: "church",
+        value:14
       }, {
-        content: "",
-        value:
+        content: "grocery store",
+        value: 9
       }, {
-        content: "",
-        value:
+        content: "bar",
+        value:8
+      }
+    ]
+  }, {
+    q: "name a professional football team that's named for an animal",
+    a: [
+      {
+        content: "bears",
+        value:39
       }, {
-        content: "",
-        value:
+        content: "dolphins",
+        value: 13
+      }, {
+        content: "lions",
+        value:12
+      }, {
+        content: "eagles",
+        value: 11
+      }, {
+        content: "panthers",
+        value: 7
+      }, {
+        content: "colts",
+        value: 6
+      }
+    ]
+  }, {
+    q: "name a place where you don't want front row seats",
+    a: [
+      {
+        content: "movie theater",
+        value: 34
+      }, {
+        content: "place of worship",
+        value: 23
+      }, {
+        content: "concert",
+        value: 12
+      }, {
+        content: "funeral",
+        value: 10
+      }, {
+        content: "sea world",
+        value: 7
+      }, {
+        content: "circus",
+        value:4
+      }
+    ]
+  }, {
+    q: "name a cartoon character who never seems to get any older",
+    a: [
+      {
+        content: "mickey mouse",
+        value: 24
+      }, {
+        content: "charlie brown",
+        value: 23
+      }, {
+        content: "bart simpson",
+        value: 15
+      }, {
+        content: "bugs bunny",
+        value: 15
+      }, {
+        content: "dennis the menace",
+        value:8
+      }, {
+        content: "lisa simpson",
+        value: 5
+      }
+    ]
+  }, {
+    q: "name a hobby or activity in which you'd love to get lessons from a pro",
+    a: [
+      {
+        content: "golf",
+        value: 44
+      }, {
+        content: "tennis",
+        value:19
+      }, {
+        content: "piano",
+        value: 10
+      }, {
+        content: "football",
+        value: 8
+      }, {
+        content: "playing guitar",
+        value: 6
+      }, {
+        content: "dancing",
+        value: 6
+      }
+    ]
+  }, {
+    q: "name something about which many people have phobias",
+    a: [
+      {
+        content: "spiders",
+        value:37
+      }, {
+        content: "heights",
+        value:25
+      }, {
+        content: "snakes",
+        value: 14
+      }, {
+        content: "water",
+        value: 7
+      }, {
+        content: "darkness",
+        value: 6
+      }, {
+        content: "flying",
+        value: 4
+      }
+    ]
+  }, {
+    q: "name something that piles up before you can get to it",
+    a: [
+      {
+        content: "laundry",
+        value: 28
+      }, {
+        content: "bills",
+        value: 23
+      }, {
+        content: "dishes",
+        value:22
+      }, {
+        content: "trash",
+        value:11
+      }, {
+        content: "mail",
+        value:8
+      }, {
+        content: "leaves",
+        value:4
+      }
+    ]
+  }, {
+    q: "other than coins, name something people collect",
+    a: [
+      {
+        content: "stamps",
+        value: 38
+      }, {
+        content: "dolls",
+        value: 20
+      }, {
+        content: "cars",
+        value: 17
+      }, {
+        content: "rocks",
+        value: 12
+      }, {
+        content: "toys",
+        value:4
+      }, {
+        content: "seashells",
+        value:3
+      }
+    ]
+  }, {
+    q: "name a job you need a license to do",
+    a: [
+      {
+        content: "doctor",
+        value:33
+      }, {
+        content: "truck driver",
+        value: 17
+      }, {
+        content: "nurse",
+        value:12
+      }, {
+        content: "taxi driver",
+        value: 12
+      }, {
+        content: "bus driver",
+        value: 9
+      }, {
+        content: "electrician",
+        value:7
+      }
+    ]
+  }, {
+    q: "name a good job for someone who asks a lot of questions",
+    a: [
+      {
+        content: "lawyer",
+        value:27
+      }, {
+        content: "reporter",
+        value: 21
+      }, {
+        content: "telemarketer",
+        value: 17
+      }, {
+        content: "doctor",
+        value:11
+      }, {
+        content: "detective",
+        value: 10
+      }, {
+        content: "teacher",
+        value: 6
+      }
+    ]
+  }, {
+    q: "what might you find out about a job that would keep you from accepting it?",
+    a: [
+      {
+        content: "low pay",
+        value:37
+      }, {
+        content: "hours are bad",
+        value:27
+      }, {
+        content: "mean boss",
+        value:11
+      }, {
+        content: "location",
+        value:10
+      }, {
+        content: "no benefits",
+        value: 5
+      }, {
+        content: "dangerous",
+        value:4
+      }
+    ]
+  }, {
+    q: "name a candy that comes in different colors",
+    a: [
+      {
+        content: "skittles",
+        value:30
+      }, {
+        content: "m&m's",
+        value:27
+      }, {
+        content: "lifesavers",
+        value: 18
+      }, {
+        content: "starburst",
+        value: 6
+      }, {
+        content: "now & later",
+        value: 4
+      }, {
+        content: "taffy",
+        value:3
+      }
+    ]
+  }, {
+    q: "name a vegetable that is not green",
+    a: [
+      {
+        content: "carrot",
+        value: 32
+      }, {
+        content: "corn",
+        value: 28
+      }, {
+        content: "pumpkin",
+        value: 12
+      }, {
+        content: "potato",
+        value: 9
+      }, {
+        content: "beet",
+        value: 8
+      }, {
+        content: "cauliflower",
+        value: 7
+      }
+    ]
+  }, {
+    q: "name something or someone associated with the addams family",
+    a: [
+      {
+        content: "thing",
+        value: 29
+      }, {
+        content: "lurch",
+        value: 19
+      }, {
+        content: "cousin it",
+        value: 13
+      }, {
+        content: "pugsley",
+        value: 12
+      }, {
+        content: "morticia",
+        value: 11
+      }, {
+        content: "wednesday",
+        value: 9
+      }
+    ]
+  }, {
+    q: "besides eat, name something a person might do on their lunch break",
+    a: [
+      {
+        content: "go for a walk",
+        value: 26
+      }, {
+        content: "exercise",
+        value: 29
+      }, {
+        content: "run errands",
+        value: 14
+      }, {
+        content: "read",
+        value: 12
+      }, {
+        content: "nap",
+        value: 12
+      }, {
+        content: "pay bills",
+        value: 5
+      }
+    ]
+  }, {
+    q: "name a reason you might look forward to november",
+    a: [
+      {
+        content: "thanksgiving",
+        value: 45
+      }, {
+        content: "sales",
+        value: 15
+      }, {
+        content: "turkey",
+        value: 14
+      }, {
+        content: "christmas decorating",
+        value: 6
+      }, {
+        content: "vacation",
+        value: 5
+      }, {
+        content: "cooler weather",
+        value: 4
+      }
+    ]
+  }, {
+    q: "name something you might eat for breakfast in the car on the way to work",
+    a: [
+      {
+        content: "doughnut",
+        value: 25
+      }, {
+        content: "bagel",
+        value: 19
+      }, {
+        content: "granola bar",
+        value: 18
+      }, {
+        content: "toast",
+        value: 10
+      }, {
+        content: "pop tart",
+        value: 9
+      }, {
+        content: "muffin",
+        value: 7
+      }
+    ]
+  }, {
+    q: "name a flavor of pudding",
+    a: [
+      {
+        content: "chocolate",
+        value: 40
+      }, {
+        content: "vanilla",
+        value: 20
+      }, {
+        content: "tapioca",
+        value: 11
+      }, {
+        content: "banana",
+        value:10
+      }, {
+        content: "butterscotch",
+        value:6
+      }, {
+        content: "lemon",
+        value:5
       }
     ]
   }
