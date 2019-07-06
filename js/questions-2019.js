@@ -1235,5 +1235,186 @@ let questions = [
         value:5
       }
     ]
+  }, {
+    q: "tell me the first thing you do when you get in your car",
+    a: [
+      {
+        content: "put seat belt on",
+        value: 54
+      }, {
+        content: "start car",
+        value: 17
+      }, {
+        content: "close car door",
+        value: 8
+      }, {
+        content: "keys in ignition",
+        value: 5
+      }, {
+        content: "lock doors",
+        value: 4
+      }, {
+        content: "fix mirrors",
+        value: 3
+      }
+    ]
+  }, {
+    q: "name a word that begins with uni-",
+    a: [
+      {
+        content: "unicorn",
+        value: 30
+      }, {
+        content: "universe",
+        value: 26
+      }, {
+        content: "uniform",
+        value: 14
+      }, {
+        content: "unite/unity",
+        value: 10
+      }, {
+        content: "unisex",
+        value: 7
+      }, {
+        content: "unibrow",
+        value: 6
+      }
+    ]
+  }, {
+    q: "tell me a way to communicate without technology",
+    a: [
+      {
+        content: "face to face",
+        value: 36
+      }, {
+        content: "mail",
+        value: 29
+      }, {
+        content: "sign language",
+        value: 15
+      }, {
+        content: "smoke signal",
+        value: 6
+      }, {
+        content: "morse code",
+        value: 5
+      }, {
+        content: "telepathy",
+        value: 4
+      }
+    ]
+  }, {
+    q: "name something that most people hate about fall",
+    a: [
+      {
+        content: "raking leaves",
+        value: 45
+      }, {
+        content: "cold weather",
+        value: 24
+      }, {
+        content: "allergies",
+        value: 11
+      }, {
+        content: "rain",
+        value: 7
+      }, {
+        content: "school starts",
+        value: 6
+      }, {
+        content: "gets dark earlier",
+        value: 4
+      }
+    ]
+  }, {
+    q: "name something you're likely to find at a fall harvest fair",
+    a: [
+      {
+        content: "pumpkins",
+        value: 39
+      }, {
+        content: "corn",
+        value: 20
+      }, {
+        content: "leaves",
+        value: 18
+      }, {
+        content: "apples",
+        value: 12
+      }, {
+        content: "people",
+        value: 5
+      }, {
+        content: "hay rides",
+        value: 3
+      }
+    ]
+  }, {
+    q: "name a job where it would be ok to yell at work",
+    a: [
+      {
+        content: "construction",
+        value: 43
+      }, {
+        content: "sports",
+        value: 31
+      }, {
+        content: "teacher",
+        value: 8
+      }, {
+        content: "police",
+        value: 6
+      }, {
+        content: "stock broker",
+        value: 5
+      }, {
+        content: "auctioneer",
+        value: 4
+      }
+    ]
+  }, {
+    q: "name something you keep in your wallet",
+    a: [
+      {
+        content: "money",
+        value: 54
+      }, {
+        content: "driver's license",
+        value: 17
+      }, {
+        content: "pictures",
+        value: 12
+      }, {
+        content: "credit cards",
+        value: 11
+      }, {
+        content: "identification",
+        value: 6
+      }
+    ]
+  }, {
+    q: "name someone people call when they're in trouble",
+    a: [
+      {
+        content: "police",
+        value: 77
+      }, {
+        content: "minister",
+        value: 7
+      }, {
+        content: "lawyer",
+        value: 5
+      }, {
+        content: "fire department",
+        value: 3
+      }, {
+        content: "parent",
+        value: 3
+      }, {
+        content: "friends",
+        value: 2
+      }
+    ]
   }
 ]
