@@ -124,3 +124,8 @@ img {
 .hide {
   display: none;
 }
+
+.smallCaps {
+  text-transform: capitalize;
+  font-variant: small-caps;
+}

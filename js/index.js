@@ -14,7 +14,7 @@ $(document).ready(function() {
     question = questions[qNum]
     questions.splice(qNum, 1)
     $(`#strikeArea`).empty()
-    $(`#questionArea`).text(question.q)
+    $(`#questionArea`).text(question.q).addClass("smallCaps")
     addAnswers(question.a)
     console.log(question.q)
     question.a.forEach((elt, i) => {
@@ -30,7 +30,7 @@ $(document).ready(function() {
       newdiv.attr("id", `ans${i}`)
       newdiv.attr("data-id", `${i}`)
       newdiv.addClass("hide answer")
-      let answerContent = $('<div>').text(`${answer.content}`).addClass("answerContent")
+      let answerContent = $('<div>').text(`${answer.content}`).addClass("answerContent  smallCaps")
       let answerValue = $('<div>').text(`${answer.value}`).addClass("answerValue").attr("id", `val${i}`)
       newdiv.append(answerContent, answerValue)
       let coverdiv = $(`<div>`)
