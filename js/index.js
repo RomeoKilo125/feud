@@ -24,6 +24,7 @@ $(document).ready(function() {
 
   // load question - pick question, addAnswers
   function loadRandomQuestion() {
+    playTheme(4.45)
     resetScore()
     $(`.scoreBox`).removeClass(`hide`)
     console.log(questions.length)
@@ -60,7 +61,7 @@ $(document).ready(function() {
     })
   }
 
-  function showAnswer(id) {
+  function showAnswer (id) {
     console.log(`show answer: ${id + 1}`)
     answerSound.play()
     $(`#cvr${id}`).addClass("hide")
@@ -71,19 +72,19 @@ $(document).ready(function() {
     $(`#questionScore`).text(currScore + qScore)
   }
 
-  function addTeamPoints(team) {
+  function addTeamPoints (team) {
     let currScore = parseInt($(`#score${team}`).text())
     let qScore = parseInt($(`#questionScore`).text())
     $(`#score${team}`).text(currScore + qScore)
     $(`#questionScore`).text(0)
   }
 
-  function strike() {
+  function strike () {
     strikeSound.play()
     $(`#strikeArea`).append(`<div>&times;</div>`)
   }
 
-  function playTheme(len = 67) {
+  function playTheme (len = theme.duration) {
     if (!theme.paused) {
       theme.pause()
       theme.load()
