@@ -23,20 +23,20 @@ img {
 }
 
 .board {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 25px 0;
   font-size: 2em;
+  padding: 25px 0;
 }
 
 .scoreBox {
+  align-items: center;
   border: solid white 5px;
   display: flex;
-  width: 150px;
   height: 100px;
   justify-content: center;
-  align-items: center;
+  width: 150px;
 }
 
 .teamScore {
@@ -46,10 +46,10 @@ img {
 }
 
 .answerContent, .answerValue {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   height: 100%;
+  justify-content: center;
 }
 
 .answerContent {
@@ -60,46 +60,46 @@ img {
 
 .answerValue {
   background-color: #ffdd33;
-  width: 15%;
   color: black;
+  width: 15%;
 }
 
 #answerArea {
-  width: 100%;
-  height: 550px;
+  align-items: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
   flex-wrap: wrap;
+  height: 550px;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 #logoBox {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 }
 
 #questionArea {
-  width: 950px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  display: flex;
   line-height: 1.5em;
+  justify-content: center;
+  height: 100px;
+  text-align: center;
+  width: 950px;
 }
 
 #strikeArea {
+  color: red;
   height: 100px;
-  width: 500px;
   display: flex;
   justify-content: space-around;
   font-size: 4em;
   font-weight: bold;
-  color: red;
+  width: 500px;
 }
 
 #questionScore, #score1, #score2 {
