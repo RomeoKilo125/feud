@@ -151,7 +151,7 @@ let questions = [
       }
     ]
   }, {
-    q: "name something a migician might make disappear",
+    q: "name something a magician might make disappear",
     a: [
       {
         content: "rabbit",
