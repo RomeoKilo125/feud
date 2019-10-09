@@ -3,6 +3,10 @@ $(document).ready(function() {
   const answerSound = new Audio(`./sounds/ff-clang.wav`)
   const strikeSound = new Audio(`./sounds/ff-strike.wav`)
 
+  theme.load()
+  answerSound.load()
+  strikeSound.load()
+
   function startGame() {
     resetScore()
     $('#score1').text(`0`)
@@ -12,9 +16,6 @@ $(document).ready(function() {
     $(`#strikeArea`).empty()
     $(`#answerArea`).append(`<div id="logoBox"><img src="./images/logo.svg" alt="Windstream Logo"></div>`)
     $(`.scoreBox`).addClass(`hide`)
-    theme.load()
-    answerSound.load()
-    strikeSound.load()
   }
 
   // reset score
@@ -153,6 +154,8 @@ $(document).ready(function() {
   - Shift + 2: Assign points to Team 2
   - x: STRIKE!
   - Shift + x: Reset Strikes
+  - m: play/stop the theme music (just once)
+  - Shift + m: play ~2.5 minutes of the theme music
   - Refresh the page to refresh the list of questions.
     ***Note: If you do this, there is a chance you may see a question you've seen before.`
 )
