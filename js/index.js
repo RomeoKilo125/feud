@@ -1,4 +1,21 @@
 $(document).ready(function() {
+  const theme = new Audio('./sounds/ff-theme.mp3')
+  const answerSound = new Audio(`./sounds/ff-clang.wav`)
+  const strikeSound = new Audio(`./sounds/ff-strike.wav`)
+
+  function startGame() {
+    resetScore()
+    $('#score1').text(`0`)
+    $('#score2').text(`0`)
+    $('#answerArea').empty()
+    $('#questionArea').empty()
+    $(`#strikeArea`).empty()
+    $(`#answerArea`).append(`<div id="logoBox"><img src="./images/logo.svg" alt="Windstream Logo"></div>`)
+    $(`.scoreBox`).addClass(`hide`)
+    theme.load()
+    answerSound.load()
+    strikeSound.load()
+  }
 
   // reset score
   function resetScore() {
@@ -45,8 +62,7 @@ $(document).ready(function() {
 
   function showAnswer(id) {
     console.log(`show answer: ${id + 1}`)
-    let sound = new Audio(`./sounds/ff-clang.wav`)
-    sound.play()
+    answerSound.play()
     $(`#cvr${id}`).addClass("hide")
     $(`#ans${id}`).removeClass("hide")
     // add score
@@ -63,9 +79,22 @@ $(document).ready(function() {
   }
 
   function strike() {
-    let sound = new Audio(`./sounds/ff-strike.wav`)
-    sound.play()
+    strikeSound.play()
     $(`#strikeArea`).append(`<div>&times;</div>`)
+  }
+
+  function playTheme(len = 67) {
+    if (!theme.paused) {
+      theme.pause()
+      theme.load()
+      return
+    }
+    theme.play().then(() => {
+      setTimeout(() => {
+        theme.pause()
+        theme.load()
+      }, len * 1000)
+    })
   }
 
   $(document).keyup(e => {
@@ -92,6 +121,12 @@ $(document).ready(function() {
       case '@':
         addTeamPoints(2)
         break;
+      case 'm':
+        playTheme(33.41)
+        break;
+      case 'M':
+        playTheme()
+        break;
       default:
         if (e.key.match(/\d/gi)) {
           if (e.key === `0`) {
@@ -102,17 +137,6 @@ $(document).ready(function() {
         }
     }
   })
-
-  function startGame() {
-    resetScore()
-    $('#score1').text(`0`)
-    $('#score2').text(`0`)
-    $('#answerArea').empty()
-    $('#questionArea').empty()
-    $(`#strikeArea`).empty()
-    $(`#answerArea`).append(`<div id="logoBox"><img src="./images/logo.svg" alt="Windstream Logo"></div>`)
-    $(`.scoreBox`).addClass(`hide`)
-  }
 
   startGame()
   alert(
