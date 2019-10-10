@@ -727,8 +727,7 @@ let questions = [
         value: 8
       }
     ]
-  },
-  /*{
+  }, {
     q: "name a chore people did during colonial times that we don't do anymore",
     a: [
       {
@@ -751,8 +750,7 @@ let questions = [
         value: 10
       }
     ]
-  }, */
-  {
+  }, {
     q: "name a place where you wish people wouldn't answer their cell phone",
     a: [
       {

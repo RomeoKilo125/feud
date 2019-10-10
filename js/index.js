@@ -25,7 +25,6 @@ $(document).ready(function() {
 
   // load question - pick question, addAnswers
   function loadRandomQuestion() {
-    playTheme(4.45)
     resetScore()
     $(`.scoreBox`).removeClass(`hide`)
     console.log(questions.length)
@@ -124,7 +123,7 @@ $(document).ready(function() {
         addTeamPoints(2)
         break;
       case 'm':
-        playTheme(33.41)
+        playTheme(4.45)
         break;
       case 'M':
         playTheme()
